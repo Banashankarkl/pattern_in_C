@@ -1,0 +1,40 @@
+sample input: 5
+sample output: 
+5 5 5 5 5 5 5 5 5 
+5 4 4 4 4 4 4 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 2 1 2 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 4 4 4 4 4 4 5 
+5 5 5 5 5 5 5 5 5
+
+code:
+#include <stdio.h>
+
+int main()
+{
+    int a[10][10];
+    int n,i,j,m,k;
+    scanf("%d",&n);
+    m=2*n-1;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+           for(k=0;k<n;k++)
+           {
+               if(i==k||i==(m-1)-k||j==k||j==(m-1)-k)
+               {
+                   printf("%d",n-k);
+                   break;
+               }
+           }
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
