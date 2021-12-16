@@ -1,13 +1,13 @@
-sample input: 5
-sample output:
-1        1
-12      21
-123    321
-1234  4321
-1234554321
+//sample input: 5
+//sample output:
+//1        1
+//12      21
+//123    321
+//1234  4321
+//1234554321
 
 
-code:
+//code:
 #include <stdio.h>
 int main()
 {
